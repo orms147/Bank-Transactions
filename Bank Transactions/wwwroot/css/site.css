@@ -20,3 +20,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.form-group input[type=submit],
+.form-group label{
+    text-transform : uppercase;
+    color : gray;
+}

@@ -6,9 +6,6 @@
 
 <h1>PassBook</h1>
 
-<p>
-    <a asp-action="AddOrEdit">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -24,7 +21,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Amount)
             </th>
-            <th></th>
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-sm btn-success">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    Create New
+                </a>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -39,16 +41,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TransactionId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
+                <a asp-action="AddOrEdit" asp-route-id="@item.TransactionId" class="btn tbn-warning">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+                <a asp-action="Delete" asp-route-id="@item.TransactionId" class="btn tbn-warning">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                </a>
             </td>
         </tr>
 }

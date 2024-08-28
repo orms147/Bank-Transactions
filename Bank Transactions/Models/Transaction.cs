@@ -9,9 +9,9 @@ namespace Bank_Transactions.Models
         [Key]
         public int TransactionId { get; set; }
 
-        [Column(TypeName ="nvarchar(12)")]
+        [Column(TypeName = "nvarchar(12)")]
         [DisplayName("Account Number")]
-        [Required(ErrorMessage ="This field is required.")]
+        [Required(ErrorMessage = "This field is required.")]
         [MaxLength(12, ErrorMessage = "Maximum 12 character only.")]
         public string AccountNumber { get; set; }
 
@@ -35,6 +35,8 @@ namespace Bank_Transactions.Models
         [MaxLength(11, ErrorMessage = "Maximum 11 character only.")]
         public string SWIFTCode { get; set; }
         public int Amount { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:MMM-dd-yy}")]
         public DateTime Date { get; set; }
     }
 }
