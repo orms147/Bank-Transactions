@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank Transactions", "Bank Transactions\Bank Transactions.csproj", "{836A31AC-6470-45C2-8ECA-AE58CFC206C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank_Transactions", "Bank Transactions\Bank_Transactions.csproj", "{836A31AC-6470-45C2-8ECA-AE58CFC206C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DF8ADFB-7767-4FEF-99D0-2AD250670E3E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
